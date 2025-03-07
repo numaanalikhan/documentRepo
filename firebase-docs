@@ -9,3 +9,15 @@
         # firebase store,
         # real-time database,
 
+##1) Implementaion of fire base Authentication.
+
+      import {GoogleAuthProvider,getAuth} from "firebase/auth"
+      
+      // initialise getAuth() by providing app in it 
+      const auth = getAuth(app)
+      
+      // create the instance of GoogleAuthProvider
+      const provider = new GoogleAuthProvider
+
+      // export both auth and provider
+
