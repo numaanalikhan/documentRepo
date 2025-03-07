@@ -22,6 +22,12 @@
 
 --> step:5👍 default export signSlice.actions
     export default signInSlice.reducer
-____________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________
 
 
+##2) Implementaion of useSelector() in reduxToolkit.
+
+    const selector = useSelector((state)=>state.sliceNameInStore.js.initialStateName)
+    const selector = useSelector((state)=>{return state.sliceNameInStore.js.initialStateName})
+_______________________________________
+    
