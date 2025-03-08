@@ -1,0 +1,8 @@
+##1) What is Node List and HTML Collections
+--> Node List object is list of nodes extracted from a document.
+--> Node List values cannot be updated if value is added.
+--> Node List is often a static collection, the nodeList value will not be changed.
+--> Nose List is just like looklike of javascript Array, only forEach method can be applied.
+what methods returns NodeList object.
+
+##2) HTML Collections are live collection, they too are objects that has collection of list of items, where list can be updated
