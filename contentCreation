@@ -1,0 +1,16 @@
+##1) edit article ....
+
+  * when edit icon is clicked it opens the model form, and also takes the data of that particular card data and populate it to the form.
+  * and then submit button is clicked
+  * we are doing method based on the either post or put like this
+
+let method = articleId ? "PUT" : "POST"
+let url = articleId ? "/api/update" : "/api/route/post"
+
+let res = await axios({
+  method,
+  url,
+  data={...formData}
+})
+
+  
