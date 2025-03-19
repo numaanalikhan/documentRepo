@@ -1,0 +1,32 @@
+Instersection observer  is an API that is used to detect the interaction of a target element with its’s ancestor element or the document viewport.
+
+how to implement intersection Observer..
+
+1) create the instace of inserction observer....
+
+  const observer = new intersectionobsever(callback,options)
+
+2) we pass a callback fun and options to the instace of observer,,
+
+3) callback: (entries,observer)=>{
+      // entries are list of obseervers that have been intersected with the target element and vieport
+      we need loop for each entry which is an object that as properties like isIntersectin
+      // and observer learn in future and commit
+}
+
+code snippet:::
+
+const observer = new IntersectionObserver( (entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry.isIntersecting)
+        if(entry.isIntersecting){
+            entry.target.classList.add("inverse")}
+        else{
+            entry.target.classList.remove("inverse")
+        }
+    })
+}, {
+    root: null, 
+    // threshold: 0.25, 
+    rootMargin: "-225px 0px -225px 0px" 
+})
