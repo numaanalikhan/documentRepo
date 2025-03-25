@@ -1,1 +1,8 @@
 
+offsetHeight()....
+
+scroll-behaviour:"smooth"
+
+scroll-padding-top:  "50px"
+
+the above scroll are used for haeader covering content on scroll..
